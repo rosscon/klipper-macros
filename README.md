@@ -7,6 +7,12 @@ This repo contains a collection of klipper macros I have found useful, mainly fo
 Some macros have come from other repos or have been inspired from various g-code generators. 
 Each macro will be attributed to the original source where open source code has been used. If any attribution is incorrect please let me know so I can resolve.
 
+## Disclaimer
+While all of the macros included within this repo have caused no harm to any of my 3D printers, person and surroundings, I cannot gurantee you the same sucess. 
+These macros all come with the warning that there is always the potential to damage your printer and/or surroundings and person.
+Therefore by installing and executing any of the macros in this repro you take full responsibility for their actions.
+In other words if any of these macros danamge your printer, cause a fire or injury I take no responsibility.
+
 
 ## Installation
 Installation is fairly simple. 
