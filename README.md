@@ -38,7 +38,7 @@ TUNE_RETRACTION BED_START=60 BED=55 NOZZLE_START=220 NOZZLE=200 PA_START=1.0 A_D
 * Add a wrapper macro to allow defining start & increment values rather than individual values
 
 
-### Pressure Advance
+### Pressure Advance (Tune)
 A modified version of the pressure advance macro developed by [m0to](https://gist.github.com/m0to/d395d44fa412d9808e0130857ea74f0b). The version included here has been modified to work well for smaller 120x120mm build plates.
 
 To enable add `[include klipper_macros/tune_pressure_advance.cfg]` to your printer.cfg
@@ -54,6 +54,15 @@ The macro will echo to the console will output instructions similar to below wit
 ```
 Find best line and multiply it by (0.5 + (bestLine * 0.05) ) to find your PA setting.
 ```
+
+### Pressure Advance (Set override)
+An issue that can occur with klipper is in multiple extruder setups `SET_PRESSURE_ADVACE` may return an error due to being unable to infer which extruder queue to apply the advance value to. 
+This can be particularly problematic for multi material prints where each filament used may need to set its own pressure advance value.
+
+This macro simply overrides the klipper default `SET_PRESSURE_ADVACE` and executes the build in klipper command but with an `EXTRUDER` value defined.
+
+To enable add `[include klipper_macros/set_pressure_advance.cfg]` to your printer.cfg and thats it!
+
 
 ### M600 Filament Change
 TODO
