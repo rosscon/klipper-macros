@@ -1,5 +1,5 @@
 # klipper-macros
-Collection of useful macros I have developed for Klipper
+Collection of useful macros for klipper
 
 
 ## Summary
