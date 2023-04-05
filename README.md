@@ -13,6 +13,9 @@ These macros all come with the warning that there is always the potential to dam
 Therefore by installing and executing any of the macros in this repro you take full responsibility for their actions.
 In other words if any of these macros danamge your printer, cause a fire or injury I take no responsibility.
 
+As always when running macros from the internet, you should asses the source code to check ther should be no issues with your particular setup.
+Also make sure that when you run any macro that you closely monitor the printer and be prepared to shutdown the printer should any issues arise.
+
 
 ## Installation
 Installation is fairly simple. 
