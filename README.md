@@ -16,7 +16,7 @@ Installation is fairly simple.
 3. create a new directory for these macros `mkdir klipper_macros`
 4. `cd` into the new directory `cd klipper_macros`
 5. clone this repo `git clone git@github.com:rosscon/klipper-macros.git . ` (dont forget to include the trailing '.')
-6. add each macro you wish to use below to your printer.cfg file `[include klipper_macros/<macro_filename>.cfg]` changing `<macro_filename>`
+6. add each macro you wish to use below to your printer.cfg `[include klipper_macros/<macro_filename>.cfg]` changing `<macro_filename>`
 
 
 
