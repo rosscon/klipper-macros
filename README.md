@@ -74,7 +74,33 @@ To enable add `[include klipper_macros/set_pressure_advance.cfg]` to your printe
 
 
 ### M600 Filament Change
-TODO
+By default Klipper does not understand the gcode M600 to initialte a change of filament.
+
+To enable add `[include klipper_macros/m600.cfg]` to your printer.cfg
+
+This macro may require a bit more setting up on your end. Edit the file `klipper_macros/m600.cfg` where you will find a section like the one below.
+Edit the values for each `default(#)` to suit your printer. X & Y are absolute positions, Z is a relative position in mm to raise the print head on
+filament change, lastly E is how far to unload the filament (example below for a bowden printer).
+
+```
+gcode:
+    {% set X = params.X|default(20)|float %}
+    {% set Y = params.Y|default(100)|float %}
+    {% set Z = params.Z|default(10)|float %}
+    {% set E = params.E|default(400)|float %}
+```
+
+To use the macro you can either add `M600` to your gcode or enter into the console.
+When filament is unloaded you need to load in the new filament and then press resume on web interface or resume through printer's screen depending on your setup.
+
+For advanced usage you can also override print head posiiton using parameters, example below
+
+```
+M600 X=10 Y=10 Z=20 E=150
+```
+
+
+
 
 ### Timelapse
 TODO
